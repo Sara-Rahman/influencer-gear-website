@@ -7,7 +7,7 @@ header{
     margin:30px;
     padding: 0px 120px;
 }
-.top-title a{
+.top-title h1{
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -21,6 +21,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: right;
+    margin-bottom: 80px;
+    flex-direction: column;
 }
 nav a{
     text-decoration: none;
@@ -54,7 +56,7 @@ nav a{
     width: 440px;
     height: 414px;
     padding-left: 10%;
-    transition: 5s;
+    transition: 3s;
     
 }
 .main-camera-image:hover{
@@ -76,6 +78,8 @@ nav a{
 .popular-products-title{
     text-align: center;
     font-size: 25px;
+    margin-top: 124px;
+    color: #3a3a3a;
     
 }
 .products{
@@ -103,21 +107,18 @@ nav a{
     color: #787885;
 }
 .see-more{
-position: absolute; 
-width: 100px;
-height: 24px;
-left: 1165px;
-top: 2375px;
-
-font-weight: bold;
-font-size: 16px;
-text-decoration: none;
-color: rgba(224, 44, 109, 0.87);
+margin:0 165px;
+}
+.see-more a{
+    text-decoration: none;
+    float: right;
+    color:#E02C6D;
+    font-weight: 700;
 }
 .self-part{
     display: flex;
     grid-template-columns: repeat(2,1fr);
-    grid-column-gap: 100px;
+    grid-column-gap: 150px;
     margin-left: 165px;
     margin-right: 165px;
     margin-top: 150px;
@@ -165,4 +166,49 @@ padding-top: 50px;
 .footer-info{
     font-size: 14px;
     color: #D9DBE1;
+}
+@media only screen and (max-width:688px){  
+    body{
+        padding:0;
+        margin:0;
+    }
+    .top-title{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    nav{
+        display: block;
+        
+    }
+    .top-banner-container{
+        display: block;
+        
+    }
+    .product-collection{
+        display: block;
+        margin:10px;
+    }
+    .products{
+        display: block;
+        width: 100%;
+        margin:10px;
+    }
+    .see-more{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .self-part{
+        display: block;
+        width: 100%;
+        padding:0px;
+        margin: 10px;
+    }
+    .featured-product{
+        padding-bottom: 30px;
+    }
+    .footer{
+        width: 100%;
+    }
+    
 }
